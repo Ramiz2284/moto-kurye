@@ -1,0 +1,26 @@
+# Системные файлы и служебное
+.DS_Store
+Thumbs.db
+
+# Виртуальное окружение
+venv/
+env/
+.venv/
+venv.bak/
+pyenv/
+__pycache__/
+*.py[cod]
+
+# Логи и дампы
+*.log
+*.sql
+*.sqlite
+*.db
+
+# Файлы/папки IDE
+.vscode/
+.idea/
+
+# Если вы храните переменные окружения
+.env
+.env.*
