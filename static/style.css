@@ -36,6 +36,16 @@ body {
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
 }
 
+h1 {
+	text-shadow: 4px 5px 7px rgba(0, 0, 0, 0.8);
+}
+
+.subtitle_p {
+	color: #ffffff !important ; /* Цвет текста */
+	-webkit-text-stroke: 0.3px #000000; /* Толщина и цвет обводки */
+	font-weight: 600;
+}
+
 /* Адаптивные отступы для hero, если на мобильном экране нужно */
 @media (max-width: 576px) {
 	.hero-section {
