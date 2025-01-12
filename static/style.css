@@ -1,53 +1,87 @@
-:root {
-	/* Два цвета: оранжевый и салатовый (можете менять под себя) */
-	--brand-color: #ffa552; /* Оранжевый */
-	--accent-color: #70d44b; /* Салатовый */
-}
-
-/* brand-bg для шапки/футера */
-.brand-bg {
-	background-color: var(--brand-color) !important;
-}
-
-/* Кнопка с салатовым цветом */
-.btn-accent {
-	background-color: var(--accent-color);
-	color: #fff;
-	border: none;
-}
-.btn-accent:hover {
-	background-color: #66c643; /* немного темнее при hover */
-	color: #fff;
-}
-
-/* Hero-section (шапка / заголовок) */
-.hero-section {
-	background-color: #fdfdfd;
-	padding: 60px 0;
-}
-
 body {
-	background-color: #fafafa;
-	font-family: 'Segoe UI', Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.hero-section {
+	background: url('https://picsum.photos/1200/500?blur=3') center/cover
+		no-repeat;
+	color: white;
+	position: relative;
+	padding: 5rem 1rem;
+	text-align: center;
+}
+.hero-section::before {
+	content: '';
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+}
+.hero-section .content {
+	position: relative;
+	z-index: 1;
+}
+.btn-accent {
+	background-color: #ff6600;
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}
+.container {
+	margin: 2rem auto;
+	padding: 1rem;
+	max-width: 800px;
+}
+.section-title {
+	border-bottom: 2px solid #ff6600;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;
+}
+.section-title i {
+	margin-right: 0.5rem;
+	color: #ff6600;
+}
+.section-content {
+	margin-bottom: 2rem;
+}
+.pricing-card {
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 1rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin-bottom: 1rem;
 }
 
-/* Для карточек (тарифы) — если нужно */
-.shadow-sm {
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+.navbar {
+	background-color: #333;
 }
 
-h1 {
-	text-shadow: 4px 5px 7px rgba(0, 0, 0, 0.8);
+.navbar .navbar-brand {
+	color: #ff6600;
+	font-weight: bold;
 }
 
-.subtitle_p {
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
-	font-weight: 600;
+.navbar .nav-link {
+	color: white;
+	margin-right: 1rem;
 }
 
-/* Адаптивные отступы для hero, если на мобильном экране нужно */
-@media (max-width: 576px) {
-	.hero-section {
-		padding: 40px 0;
-	}
+.navbar .nav-link:hover {
+	color: #ff6600;
+}
+
+footer {
+	background-color: #333;
+	color: white;
+	padding: 1rem 0;
+	text-align: center;
 }
