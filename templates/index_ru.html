@@ -7,19 +7,18 @@
 {% block content %}
 
 <!-- Hero Section (с фоновым изображением) -->
-<div class="hero-section text-center p-5"
+<div class="hero-section text-center p-5 position-relative"
   style="background: url('https://picsum.photos/1200/500?blur=3') center/cover no-repeat;">
-  <!-- 
-    Если хотите затемнить картинку, можно обернуть текст и кнопку в div:
-    <div style="background-color: rgba(0,0,0,0.4); min-height: 300px;">
-      ...
-    </div>
-  -->
-  <h1 class="display-5 fw-bold mb-3 text-white">Курьер на скутере в Анталии</h1>
-  <p class="subtitle_p lead mb-4 text-white">Быстрая доставка и помощь в нужный момент</p>
-  <button class="btn btn-accent btn-lg" onclick="window.open('https://wa.me/905444558407','_blank')">
-    Написать в WhatsApp
-  </button>
+
+  <div style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
+  <div class="position-relative" style="z-index: 1;">
+    <h1 class=" display-5 fw-bold mb-3 text-white">Курьер на скутере в Анталии</h1>
+    <p class="subtitle_p lead mb-4 text-white">Быстрая доставка и помощь в нужный момент</p>
+    <button class="btn btn-accent btn-lg" onclick="window.open('https://wa.me/905444558407','_blank')">
+      Написать в WhatsApp
+    </button>
+  </div>
+
 </div>
 
 <hr class="my-5">
